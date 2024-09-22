@@ -6,10 +6,13 @@ def main():
 
     # Load variables from credentials.env
     load_dotenv('credentials.env')
-
+    
     # Retrieve the environment variables
     EMAIL_ACCOUNT = os.getenv("EMAIL_ACCOUNT")
     EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
+        
+    print(EMAIL_ACCOUNT)
+
 
     imap_server = login(EMAIL_ACCOUNT=EMAIL_ACCOUNT, EMAIL_PASSWORD=EMAIL_PASSWORD)
     read_email(imap_server, EMAIL_ACCOUNT=EMAIL_ACCOUNT, EMAIL_PASSWORD=EMAIL_PASSWORD)
