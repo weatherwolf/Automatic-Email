@@ -10,8 +10,7 @@ import pandas as pd
 import numpy as np
 import io
 
-from Functions.vat_checker import run_vat_checker
-
+from Code.Functions.vat_checker import run_vat_checker
 
     
 def login(EMAIL_ACCOUNT, EMAIL_PASSWORD):

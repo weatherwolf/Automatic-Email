@@ -11,7 +11,6 @@ def main():
     EMAIL_ACCOUNT = os.getenv("EMAIL_ACCOUNT")
     EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
 
-
     imap_server = login(EMAIL_ACCOUNT=EMAIL_ACCOUNT, EMAIL_PASSWORD=EMAIL_PASSWORD)
     read_email(imap_server, EMAIL_ACCOUNT=EMAIL_ACCOUNT, EMAIL_PASSWORD=EMAIL_PASSWORD)
     logout(imap_server)
