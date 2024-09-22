@@ -1,0 +1,1 @@
+Project to create an automated email system, that can handle some custom functions, based on the content of the email
